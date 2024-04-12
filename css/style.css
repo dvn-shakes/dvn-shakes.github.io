@@ -1,0 +1,144 @@
+body {
+    background-image: url("/media/image/bridge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {}
+
+main {
+    min-height: 500px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.crop {
+    /* width: 200px; */
+    height: 200px;
+    overflow: hidden;
+}
+
+.crop-2 {
+    /* width: 200px; */
+    height: 400px;
+    overflow: hidden;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #000 !important;;
+}
+.nav-link{
+    color: #000;
+}
+
+.crop img {
+    /* width: 400px; */
+    height: 400px;
+    margin: -100px 0 0 -100px;
+}
+
+.bg-color-0{
+    /* background-color: #E1F0DA; */
+    background-image: linear-gradient(to right,#E1F0DA, transparent);
+}
+/* .bg-color-1{
+    background-color: #D4E7C5;
+} */
+.bg-color-1{
+    /* background-color:  #EFFCEF; */
+}
+.bg-instagram{
+    color: #FE0B81;
+}
+
+.bg-youtube{
+    color: #FF0000;
+}
+.bg-twitter{
+    color: #1DA1F2;
+}
+.bg-facebook{
+    color: #4267B2;
+}
+
+.no-link-line{
+    text-decoration: none;
+}
+
+.round-img{
+    border-radius: 60rem;
+    width: 100%;
+    aspect-ratio: 1;    
+}
+
+.round-box-left{
+    border-top-left-radius: 60rem;
+    border-bottom-left-radius: 60rem;
+}
+footer {
+    background-color: #000;
+}
+
+.right-borderless {
+    border-right: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.left-borderless {
+    border-left: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@media print {
+
+    header,
+    footer,
+    #buttonSection,
+    .btn-print-hide,
+    … {
+        display: none;
+    }
+
+    body{
+        background-image: none;
+    }
+    main {
+        padding: 5px;
+        display: flex;
+    }
+
+    #membership {
+        width: 100% !important;
+        padding: 10px !important;
+        margin: 0 !important;
+        max-width:inherit; 
+        background-color: transparent !important;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width:inherit;           
+    }
+
+    .container-fluid {       
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100% !important;
+        max-width:inherit;               
+    }
+
+    .shadow{
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    .table-bordered, .table-secondary{
+        border-color: #000;
+    }
+    .table-secondary{
+        background-color: lightgrey;
+    }
+}

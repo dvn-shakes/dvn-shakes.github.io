@@ -1,0 +1,42 @@
+<div class="container container-fluid bg-white">
+	<script>
+		setActiveLink();
+		var currentPage = sessionStorage.getItem("currentPage");
+		linkMove('#' + currentPage[0].toUpperCase() + currentPage.substr(1).toLowerCase());
+	</script>
+	<a class="navbar-brand" href="#home" onclick="retrieveView('home', '#appMain')">
+		<img class="img-fluid" src="/media/image/logo.png" alt="" width="200px" />
+	</a>
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+		aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon" />
+	</button>
+	<div class="justify-content-end collapse navbar-collapse" id="navbarNav">
+		<ul class="nav nav-pills nav-fill">
+			<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#home"
+					onclick="retrieveView('home', '#appMain')">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#about" onclick="retrieveView('about', '#appMain')">About</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#events" role="button"
+					aria-expanded="false">Projects</a>
+				<!-- <ul class="dropdown-menu">
+					<li>
+						<a class="dropdown-item" href="#events/schedule"
+							onclick="retrieveView('events/schedule', '#appMain')"></a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#events/race"
+							onclick="retrieveView('events/race', '#appMain')">Upcoming Projects</a>
+					</li>
+				</ul> -->
+			</li>			
+			<li class="nav-item">
+				<a class="nav-link" href="#contact" onclick="retrieveView('contact', '#appMain')">Contact Us</a>
+			</li>
+		</ul>
+	</div>
+</div>
